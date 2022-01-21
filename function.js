@@ -30,3 +30,21 @@ let myAge = 46;
 console.log((myAge = nextAge(myAge))); //changes back to whatever the function nextAge spits out. 47
 // above function is implied that age is given and that return is age plus 1.
 // But why would we not specify it needs to be input as a number?
+
+//functions wth darie
+
+function myName() {
+  console.log("Myname is CK");
+}
+myName();
+
+function getName(firstName, lastName) {
+  console.log(`My name is ${firstName} ${lastName}`);
+}
+getName("John", "Doe");
+
+function convert(minutes) {
+  const seconds = minutes * 60;
+  console.log(seconds);
+}
+convert(89);

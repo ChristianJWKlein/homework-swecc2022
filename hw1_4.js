@@ -33,6 +33,35 @@ function minMaxArray(arr) {
 
 minMaxArray(theArray);
 
+//create a function that takes an array of numbers & return both min and max in that order. use a loop.
+
+function minMaxFinder(arr) {
+  //the Math.min and Math.max functions use a loop
+  console.log(Math.min(...arr));
+  console.log(Math.max(...arr));
+}
+minMaxFinder(theArray);
+
+//
+//create a function that takes an array of numbers & return both min and max in that order. use a loop.
+
+function aDifMinMaxFinder(arr) {
+  let min = arr[0];
+  let max = arr[0];
+
+  for (i = 0; i < arr.length; i++) {
+    if (min > arr[i]) {
+      min = arr[i];
+    }
+    if (max < arr[i]) {
+      max = arr[i];
+    }
+
+    return [min, max];
+  }
+}
+aDifMinMaxFinder(theArray);
+
 // 1. Converts a string to uppercase letters:
 let str = "WHAT a TIME to BE ALIVE!";
 let upStr = str.toUpperCase();
