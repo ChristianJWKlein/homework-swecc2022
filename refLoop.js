@@ -11,3 +11,16 @@ function genArr(length) {
 
 const myArray = genArr(25); //can take an additional two arguments. (length, ,)
 console.log(myArray);
+
+//Nested If statment inside temprate litterals
+
+const sentence = "The quick brown fox jumps over the lazy dog.";
+
+const word = "fox";
+
+console.log(
+  `The word "${word}" ${
+    sentence.includes(word) ? "is" : "is not"
+  } in the sentence`
+);
+// expected output: "The word "fox" is in the sentence"

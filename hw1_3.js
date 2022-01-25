@@ -35,6 +35,9 @@ Returns a grade for the score, either:
 
 function assignGrade(num) {
   switch (true) {
+    case num > 100 || num < 0:
+      console.log("not a valid score");
+      break;
     case num >= 90:
       console.log("A");
       break;
@@ -55,7 +58,7 @@ function assignGrade(num) {
       break;
   }
 }
-assignGrade(60);
+assignGrade(1000);
 
 /*
 //extra code challenge from Juan.  Find the odd numbers in the array and then return the
